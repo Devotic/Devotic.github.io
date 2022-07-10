@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<style>
+
+    body{
+        color: white;
+        font-family: sans-serif;
+        background-image: url("images/mainbackground.jpg");
+    }
+    #nav_menu{
+        height: 50px;
+        font-family: Serif;
+    }
+    #nav_menu a{
+        color:white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        float: right;
+        margin: 10px;
+        margin-right: 50px;
+    }
+    #leftside input{
+        width:100%;
+        height:30px;
+    }
+    #leftside select{
+        width:100%;
+        height:40px;
+    }
+    #rightside input{
+        width:100%;
+        height:30px;
+    }
+    #rightside textarea{
+        width:100%;
+        height:60%;
+    }
+    #contact_form{
+        margin-top: -20px;
+        width: 50%;
+        float: right;
+    }
+</style>
+<body>
+<nav id="nav_menu">
+    <a href="CONTACT.html">CONTACT</a>
+    <a href="About%20me.html">ABOUT ME</a>
+    <a href="CV.html">CV</a>
+    <a href="Home.html">HOME</a>
+</nav>
+<br>
+
+<div style="width: 50%;float: left">
+<p style="font-size: 25px;font-family: 'Segoe Script'">If you wish to contact me for further information you can through these methods</p>
+<p>Email:kristijan.cvetanoski@students.finki.ukim.mk</p>
+<p>Phone number: 072-313-240</p>
+</div>
+
+<div id="contact_form">
+    <h2 style="text-align: center;padding-top:20px;"><strong>Complete this form if you want me to contact you</strong></h2>
+    <div id="form" >
+        <div id="elements">
+            <form action="/form.php" method="post">
+                <div class="fieldsets"><fieldset id="leftside">
+                    <label>
+                        First Name<br>
+                        <input type="text" name="FirstName" placeholder="Your Name"><br><br>
+                    </label>
+                    <label>
+                        Last Name <br>
+                        <input type="text" name="LastName" placeholder="Your last name"><br><br>
+                    </label>
+                </fieldset>
+                    <fieldset id="rightside">
+                        <label>
+                            E-mail <br>
+                            <input type="text" name="LastName" placeholder="Your E-mail"><br><br>
+                        </label>
+                        <label>
+                            Comment<br>
+                            <textarea  name="Subject" placeholder="If you have a quick comment"></textarea>
+                        </label>
+                        <br><br>
+                    </fieldset>
+                </div>
+                <input type="submit" id="submitbutton">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
